@@ -1,2 +1,3 @@
-# ff12-party
-Party generator for Final Fantasy XII with opinionated canon jobs.
+# Final Fantasy XII party generator
+
+Access here: https://tukkek.github.io/ff12-party
