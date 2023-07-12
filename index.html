@@ -1,13 +1,22 @@
+<!DOCTYPE html>
+
 <title>Final Fantasy XII party generator</title>
 
 <link rel='stylesheet' href='style.css'>
 
 <div class='header'>Party:</div>
-<ol id='party'>
-  <template id='member'>
-    <li class='member'><span class='name'></span> (<span class='job'></span>)</li>
-  </template>
-</ol>
+<div id='party'>
+  <div id='available'>
+    <template id='found'>
+      <div class='found'><label><input type='checkbox'><span class='name'></span></label></div>
+    </template>
+  </div>
+  <ol id='priority'>
+    <template id='member'>
+      <li class='member'><span class='name'></span> (<span class='job'></span>)</li>
+    </template>
+  </ol>
+</div>
 
 <script type='module'>
   import * as party from './script/party.js'
