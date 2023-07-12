@@ -1,0 +1,15 @@
+<title>Final Fantasy XII party generator</title>
+
+<link rel='stylesheet' href='style.css'>
+
+<div class='header'>Party:</div>
+<ol id='party'>
+  <template id='member'>
+    <li class='member'><span class='name'></span> (<span class='job'></span>)</li>
+  </template>
+</ol>
+
+<script type='module'>
+  import * as party from './script/party.js'
+  party.setup()
+</script>
