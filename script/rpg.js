@@ -1,4 +1,9 @@
-export function roll(min,max){return Math.floor(Math.random()*(max-min+1)+min)}
+export var seed=new URL(document.location).searchParams.get('seed')
+                ||new Date().toISOString().slice(0,10)
+
+let rng=new alea()
+
+export function roll(min,max){return Math.floor(rng()*(max-min+1)+min)}
 
 export function shuffle(array,clone=false){
   if(clone) array=Array.from(array)

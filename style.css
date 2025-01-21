@@ -10,3 +10,7 @@
 .name{
   font-weight:bold;
 }
+a{
+  margin-top:1em;
+  display:block;
+}

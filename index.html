@@ -17,8 +17,15 @@
     </template>
   </ol>
 </div>
+<a>Permanent link.</a>
 
+<script src='libraries/alea.js'></script>
 <script type='module'>
   import * as party from './script/party.js'
+  import * as rpg from './script/rpg.js'
+
   party.setup()
+  let link=new URL(document.location)
+  link.searchParams.set('seed',rpg.seed)
+  document.querySelector('a').href=link
 </script>
